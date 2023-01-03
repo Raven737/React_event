@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+Practice: Create basic onClick event handlers for your header menu
+Завдання 1
+Використовуючи бібліотеку create-react-app(https://create-react-app.dev/) запустити свій React-проект. Усі наступні дії виконуємо пам'ятаючи про компонентний підхід та правильне структурування окремих файлів і компонентів! Створюємо компонент App. Він міститиме компонент Menu - це буде перелік посилань на інші сторінки. Перелік посилань задано статичним масивом, який потрібно буде промапити всередині компонента Menu і для початку просто відобразити поле title як стрічку:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[
+ {
+   title: 'Get Start!',
+   link: 'https://reactjs.org/docs/hello-world.html',
+ },
+ {
+   title: 'What is that JSX at all?',
+   link: 'https://reactjs.org/docs/introducing-jsx.html',
+ },
+ {
+   title: 'Render or do not render is the question...',
+   link: 'https://reactjs.org/docs/rendering-elements.html',
+ },
+ {
+   title: 'New big feature for React',
+   link: null,
+ },
+]
 
-## Available Scripts
+Також застилити компоненти Арр і Menu таким чином, щоб перелік посилань був розміщений у рядок вверху сторінки - як навігація будь-якої із веб-сторінок - стилі довільні.
 
-In the project directory, you can run:
+Завдання 2.
+Створити компонент MenuItem. Даний компонент прийматиме параметри title i link - відповідно відображатиме посилання за допомогою HTML-тегу а, де пропса title відображатиметься як текст посилання і пропса link як значення атрибута href.
 
-### `npm start`
+Завдання 3.
+Внести наступні зміни до компонента MenuItem:
+нова сторінка по посиланні повинна відкриватись у новому вікні;
+при кліку на дане посилання потрібно виводити значення пропси title у консоль;
+якщо елемент масиву не містить параметру link - відображати звичайний HTML-тег div, який при кліку на нього через alert показуватиме повідомлення “This page is under construction yet”.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Завдання 4.
+Внести зміни у компоненті App - при мапінгу масиву елементів повертати не просто стрічку тексту, а компонент MenuItem, всередину якого передавати необхідні пропси. Компонент App відрендерити за допомогою ReactDOM.render в index.js. Додаток повинен рендеритись вірно, зі стилями і виконувати усю вказану логіку щодо компонентів. Зайвих повідомлень чи помилок у консоль виводитись не має.
