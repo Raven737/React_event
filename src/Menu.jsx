@@ -4,8 +4,8 @@ import MenuItem from './MenuItem';
 const Menu = () => (
     <div className="wrap">
         {
-            pages.map(page => (
-                <MenuItem title={page.title} link={page.link} />
+            pages.map((page, index) => (
+                <MenuItem key={index} title={page.title} link={page.link} />
             ))
         }
     </div>
