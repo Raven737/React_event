@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React_event/static/css/main.a2de960f.css",
+    "main.js": "/React_event/static/js/main.77adf532.js",
+    "index.html": "/React_event/index.html",
+    "main.a2de960f.css.map": "/React_event/static/css/main.a2de960f.css.map",
+    "main.77adf532.js.map": "/React_event/static/js/main.77adf532.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2de960f.css",
+    "static/js/main.77adf532.js"
+  ]
+}
